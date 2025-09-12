@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1024" height="1024">
+      <title>Taekwondo Belt</title>
+      
+    <defs>
+      <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.30"/>
+        <stop offset="40%" stop-color="#FFFFFF" stop-opacity="0.05"/>
+        <stop offset="100%" stop-color="#000000" stop-opacity="0.05"/>
+      </linearGradient>
+      <linearGradient id="shadow" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#000000" stop-opacity="0.30"/>
+        <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+      </linearGradient>
+      <linearGradient id="tailShadow" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#000000" stop-opacity="0.25"/>
+        <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+      </linearGradient>
+      
+    </defs>
+    
+      <!-- Horizontal wraps -->
+      <g id="wraps">
+        <rect x="40" y="180" width="200" height="56" rx="10" fill="#1565C0" stroke="#1A1A1A" stroke-width="8"/>
+        <rect x="272" y="180" width="200" height="56" rx="10" fill="#1565C0" stroke="#1A1A1A" stroke-width="8"/>
+        <rect x="40" y="180" width="200" height="18" rx="10" fill="url(#shine)"/>
+        <rect x="272" y="180" width="200" height="18" rx="10" fill="url(#shine)"/>
+      </g>
+
+      <!-- Knot block with shading -->
+      <g id="knot">
+        <rect x="208" y="160" width="96" height="96" rx="12" fill="#1565C0" stroke="#1A1A1A" stroke-width="10"/>
+        <path d="M256,168 v80" stroke="#000" stroke-opacity="0.25" stroke-width="6"/>
+        <path d="M232,168 v80" stroke="#000" stroke-opacity="0.15" stroke-width="4"/>
+        <path d="M280,168 v80" stroke="#000" stroke-opacity="0.15" stroke-width="4"/>
+        <rect x="208" y="160" width="96" height="30" rx="12" fill="url(#shadow)"/>
+      </g>
+
+      <!-- Overlap shadows -->
+      <path d="M208,188 h-18" stroke="#000" stroke-opacity="0.3" stroke-width="16" stroke-linecap="round"/>
+      <path d="M304,188 h18" stroke="#000" stroke-opacity="0.3" stroke-width="16" stroke-linecap="round"/>
+
+      <!-- Tails -->
+      <g id="tails">
+        <path d="M216,256 l-40,160 l72,0 l26,-110 z" fill="#1565C0" stroke="#1A1A1A" stroke-width="10"/>
+        <path d="M296,256 l40,160 l-72,0 l-26,-110 z" fill="#1565C0" stroke="#1A1A1A" stroke-width="10"/>
+        <path d="M216,256 l-40,160" stroke="url(#tailShadow)" stroke-width="18" stroke-linecap="round"/>
+        <path d="M296,256 l40,160" stroke="url(#tailShadow)" stroke-width="18" stroke-linecap="round"/>
+      </g>
+
+      <ellipse cx="256" cy="260" rx="70" ry="14" fill="#000000" opacity="0.12"/>
+    </svg>
